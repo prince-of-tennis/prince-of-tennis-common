@@ -1,0 +1,15 @@
+//
+// Created by 齋藤祐希 on 2025/12/05.
+//
+
+#pragma once
+
+enum eGameState
+{
+    GAME_STATE_MATCHING_FOR_PLAYER1,
+    GAME_STATE_MATCHING_FOR_PLAYER2,
+    GAME_STATE_FINISHED_MATCHING,
+    GAME_STATE_START_GAME,
+    GAME_STATE_POINT,
+    GAME_STATE_FINISH
+};

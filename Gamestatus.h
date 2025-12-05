@@ -3,7 +3,7 @@
 #include "GameScore.h"
 #include "util/point_3d.h"
 
-struct Gamestatus
+struct GameStatus
 {
     Point3d player;
     Point3d ball;
