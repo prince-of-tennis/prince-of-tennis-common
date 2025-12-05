@@ -4,7 +4,7 @@
 
 #pragma once
 
-enum eGameState
+enum GameState
 {
     GAME_STATE_MATCHING_FOR_PLAYER1,
     GAME_STATE_MATCHING_FOR_PLAYER2,
