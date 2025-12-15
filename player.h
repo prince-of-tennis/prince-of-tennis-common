@@ -8,6 +8,6 @@ using namespace std;
 struct Player
 {
     Point3d point;
-    string name;
+    char name[32];
     float speed;
 };
