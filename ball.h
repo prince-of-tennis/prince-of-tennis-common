@@ -2,6 +2,7 @@
 
 #include "util/point_3d.h"
 
+
 struct Ball
 {
     Point3d point;
