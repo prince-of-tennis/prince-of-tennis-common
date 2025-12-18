@@ -4,12 +4,12 @@
 
 typedef enum
 {
-    GAME_PHASE_WAIT_FOR_MATCH = 0,  // ƒ}ƒbƒ`ƒ“ƒO’†
-    GAME_PHASE_MATCH_COMPLETE,      // ƒ}ƒbƒ`ƒ“ƒOŠ®—¹iƒvƒŒƒCƒ„[‚ª‘µ‚Á‚½ó‘Ôj
-    GAME_PHASE_START_GAME,          // ƒQ[ƒ€ŠJŽn‘O‚Ì€”õŠúŠÔ
-    GAME_PHASE_IN_RALLY,            // ƒ‰ƒŠ[’†
-    GAME_PHASE_POINT_SCORED,        // ƒ|ƒCƒ“ƒg‚ªŒˆ‚Ü‚Á‚½’¼Œã
-    GAME_PHASE_GAME_FINISHED           // ƒQ[ƒ€iƒZƒbƒg/ƒ}ƒbƒ`j‚ªI—¹‚µ‚½
+    GAME_PHASE_WAIT_FOR_MATCH = 0,  // ãƒžãƒƒãƒãƒ³ã‚°å¾…æ©Ÿä¸­
+    GAME_PHASE_MATCH_COMPLETE,      // ãƒžãƒƒãƒãƒ³ã‚°å®Œäº†ï¼ˆãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒæƒã£ãŸçŠ¶æ…‹ï¼‰
+    GAME_PHASE_START_GAME,          // ã‚²ãƒ¼ãƒ é–‹å§‹å‰ã®åˆæœŸåŒ–
+    GAME_PHASE_IN_RALLY,            // ãƒ©ãƒªãƒ¼ä¸­
+    GAME_PHASE_POINT_SCORED,        // ãƒã‚¤ãƒ³ãƒˆãŒå…¥ã£ãŸå¾Œ
+    GAME_PHASE_GAME_FINISHED        // ã‚²ãƒ¼ãƒ ï¼ˆã‚»ãƒƒãƒˆ/ãƒžãƒƒãƒï¼‰ãŒçµ‚äº†
 } GamePhase;
 
 #endif
