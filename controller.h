@@ -5,5 +5,5 @@ struct PlayerInput
     bool left;
     bool up;
     bool down;
-    bool swing; // ƒ‰ƒPƒbƒgU‚Á‚½‚©
+    bool swing; // ãƒ©ã‚±ãƒƒãƒˆæ”»æ’ƒãƒœã‚¿ãƒ³
 };
