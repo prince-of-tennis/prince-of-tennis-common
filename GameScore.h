@@ -2,8 +2,8 @@
 #define MAX_SETS 3 
 struct GameScore
 {
-    int games_in_set[MAX_SETS][2]; // [セット番号][プレイヤー番号 (0 or 1)]
-    int current_set;               // 現在のセット番号 (0, 1, 2)
-    int current_game_p1;           // 現在のゲームでのP1のポイント数 (0, 15, 30, 40...)
-    int current_game_p2;           // 現在のゲームでのP2のポイント数
+    int games_in_set[MAX_SETS][2]; // [繧ｻ繝�繝育分蜿ｷ][繝励Ξ繧､繝､繝ｼ逡ｪ蜿ｷ (0 or 1)]
+    int current_set;               // 迴ｾ蝨ｨ縺ｮ繧ｻ繝�繝育分蜿ｷ (0, 1, 2)
+    int current_game_p1;           // 迴ｾ蝨ｨ縺ｮ繧ｲ繝ｼ繝縺ｧ縺ｮP1縺ｮ繝昴う繝ｳ繝域焚 (0, 15, 30, 40...)
+    int current_game_p2;           // 迴ｾ蝨ｨ縺ｮ繧ｲ繝ｼ繝縺ｧ縺ｮP2縺ｮ繝昴う繝ｳ繝域焚
 };
