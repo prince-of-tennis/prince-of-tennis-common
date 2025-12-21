@@ -15,7 +15,7 @@ namespace GameConstants {
     constexpr float PLAYER_MOVEMENT_EPSILON = 0.0001f;    // 移動ベクトルの正規化の閾値
 
     // ボール関連
-    constexpr float BALL_SERVE_HEIGHT = 1.0f;             // サーブ時のボールの高さ（地面からメートル）
+    constexpr float BALL_SERVE_HEIGHT = 2.0f;             // サーブ時のボールの高さ（地面からメートル）
     constexpr float BALL_SERVE_OFFSET_FROM_BASELINE = 0.9674f; // ベースラインからサーブ位置までのオフセット
 
     // 物理定数
