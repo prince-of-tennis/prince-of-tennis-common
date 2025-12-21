@@ -1,32 +1,17 @@
 #pragma once
 
 #include <cstdint>
-#include <stdio.h>
 
 #include "util/packet_type.h"
 #include "ball.h"
 
 #define PACKET_MAX_SIZE 1024
 
+// ネットワーク通信用パケット構造体
+// 構造体パディングを防ぐため、固定サイズの型を使用
 struct Packet
 {
-    PacketType type;
-    size_t size;
+    uint32_t type;  // PacketType を uint32_t として送信（エンディアン問題を回避）
+    uint32_t size;  // size_t ではなく uint32_t を使用（プラットフォーム非依存）
     uint8_t data[PACKET_MAX_SIZE];
-};
-
-struct PlayerStatePacket
-{
-    int player_id;    // 0 ~ 3
-    Point3d position; // 座標 (x, y, z)
-};
-
-struct ScorePacket
-{
-    int current_game_p1;    //0,15,30,40
-    int current_game_p2;
-    int games_p1;        // 現在のセットの取得ゲーム数
-    int games_p2;
-    int sets_p1;    //取得セット数
-    int sets_p2;
-};
+} __attribute__((packed));  // パディングを無効化（GCC/Clang）

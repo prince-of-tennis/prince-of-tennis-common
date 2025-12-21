@@ -2,9 +2,7 @@
 
 #include "util/point_3d.h"
 
-// SDL_netの前方宣言（ヘッダー依存を減らす）
-typedef struct _TCPsocket *TCPsocket;
-
+// プレイヤーの状態（ゲームロジック＋ネットワーク共通）
 struct Player
 {
     // ゲーム情報
@@ -12,8 +10,7 @@ struct Player
     char name[32];
     float speed;
 
-    // ネットワーク情報（サーバー側でのみ使用）
-    TCPsocket socket;
+    // 接続情報（サーバー側で管理、クライアント側では無視される）
     bool connected;
-    int player_id;  // 0～3
+    int player_id;  // 0～1（2人プレイヤー専用）
 };
