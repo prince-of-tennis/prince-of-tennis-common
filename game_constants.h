@@ -5,6 +5,10 @@
 // ============================================
 
 namespace GameConstants {
+    // プレイヤーID定数
+    constexpr int PLAYER_ID_INVALID = -1;                 // 無効なプレイヤーID
+    constexpr int MAX_PLAYERS = 2;                        // 最大プレイヤー数
+
     // コート寸法（メートル単位）
     constexpr float COURT_HALF_WIDTH = 4.115f;      // コートの幅の半分
     constexpr float COURT_HALF_LENGTH = 11.89f;     // コートの長さの半分
@@ -26,5 +30,18 @@ namespace GameConstants {
     // ゲームループ
     constexpr float FRAME_TIME = 0.016f;                  // 1フレームの時間 (60 FPS)
     constexpr int FRAME_DELAY_MS = 16;                    // フレーム間の遅延（ミリ秒）
+
+    // プレイヤーID検証関数
+    inline bool is_valid_player_id(int player_id) {
+        return player_id >= 0 && player_id < MAX_PLAYERS;
+    }
+
+    // 相手プレイヤーIDを取得
+    inline int get_opponent_player_id(int player_id) {
+        if (!is_valid_player_id(player_id)) {
+            return PLAYER_ID_INVALID;
+        }
+        return (player_id == 0) ? 1 : 0;
+    }
 }
 
