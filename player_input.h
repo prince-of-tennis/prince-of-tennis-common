@@ -7,5 +7,7 @@ struct PlayerInput
     bool left;
     bool front;
     bool back;
-    bool swing;
+    float acc_x;
+    float acc_y;
+    float acc_z;
 } __attribute__((packed));
