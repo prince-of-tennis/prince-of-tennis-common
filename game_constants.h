@@ -12,10 +12,13 @@ namespace GameConstants {
     // コート寸法（メートル単位）
     constexpr float COURT_HALF_WIDTH = 4.115f;      // コートの幅の半分
     constexpr float COURT_HALF_LENGTH = 11.89f;     // コートの長さの半分
+    constexpr float COURT_MAX_HEIGHT = 4.45f;       // コートの最大高さ（これを超えるとアウト）
+    constexpr float NET_HEIGHT = 4.45f;             // ネットの高さ（Z=0でこの高さ以下はネットアウト）
+    constexpr float NET_POSITION_Z = 0.0f;          // ネットのZ座標位置
 
     // プレイヤー初期位置
     constexpr float PLAYER_BASELINE_DISTANCE = 24.9674f;  // ベースラインからの距離
-    constexpr float PLAYER_MOVE_SPEED = 5.0f;             // プレイヤーの移動速度 (m/s)
+    constexpr float PLAYER_MOVE_SPEED = 20.0f;             // プレイヤーの移動速度 (m/s)
     constexpr float PLAYER_MOVEMENT_EPSILON = 0.0001f;    // 移動ベクトルの正規化の閾値
 
     // ボール関連
