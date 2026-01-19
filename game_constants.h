@@ -9,16 +9,16 @@ namespace GameConstants {
     constexpr int PLAYER_ID_INVALID = -1;                 // 無効なプレイヤーID
     constexpr int MAX_PLAYERS = 2;                        // 最大プレイヤー数
 
-    // コート寸法（メートル単位）
-    constexpr float COURT_HALF_WIDTH = 4.115f;      // コートの幅の半分
-    constexpr float COURT_HALF_LENGTH = 11.89f;     // コートの長さの半分
-    constexpr float COURT_MAX_HEIGHT = 4.45f;       // コートの最大高さ（これを超えるとアウト）
-    constexpr float NET_HEIGHT = 4.45f;             // ネットの高さ（Z=0でこの高さ以下はネットアウト）
+    // コート寸法（メートル単位）※ground.objのサイズに合わせて設定
+    constexpr float COURT_HALF_WIDTH = 21.4f;       // コートの幅の半分【ground.obj: X軸最大絶対値21.406】
+    constexpr float COURT_HALF_LENGTH = 31.2f;      // コートの長さの半分【ground.obj: Z軸31.244】
+    constexpr float COURT_MAX_HEIGHT = 7.0f;        // コートの最大高さ（これを超えるとアウト）
+    constexpr float NET_HEIGHT = 1.07f;             // ネットの高さ（Z=0でこの高さ以下はネットアウト）
     constexpr float NET_POSITION_Z = 0.0f;          // ネットのZ座標位置
 
     // プレイヤー初期位置
     constexpr float PLAYER_BASELINE_DISTANCE = 24.9674f;  // ベースラインからの距離
-    constexpr float PLAYER_MOVE_SPEED = 20.0f;             // プレイヤーの移動速度 (m/s)
+    constexpr float PLAYER_MOVE_SPEED = 30.0f;             // プレイヤーの移動速度 (m/s)
     constexpr float PLAYER_MOVEMENT_EPSILON = 0.0001f;    // 移動ベクトルの正規化の閾値
 
     // ボール関連
@@ -26,7 +26,7 @@ namespace GameConstants {
     constexpr float BALL_SERVE_OFFSET_FROM_BASELINE = 0.9674f; // ベースラインからサーブ位置までのオフセット
 
     // 物理定数
-    constexpr float GRAVITY = 9.8f;                       // 重力加速度 (m/s^2)
+    constexpr float GRAVITY = 39.2f;                      // 重力加速度 (m/s^2)【9.8→19.6に強化：2倍】
     constexpr float GROUND_Y = 0.0f;                      // 地面のY座標
     constexpr float BOUNCE_RESTITUTION = 0.7f;            // 反発係数（バウンド時の速度減衰率）
 
