@@ -10,6 +10,8 @@ enum PacketType
     PACKET_TYPE_PLAYER_SWING,  // プレイヤースイング
     PACKET_TYPE_PLAYER_STATE,
     PACKET_TYPE_SCORE_UPDATE,  // スコア更新
-    PACKET_TYPE_JUDGE_RESULT,   // 判定結果,
+    PACKET_TYPE_JUDGE_RESULT,    // 判定結果
+    PACKET_TYPE_ABILITY_REQUEST, // 能力発動リクエスト
+    PACKET_TYPE_ABILITY_STATE,   // 能力状態同期
     PACKET_TYPE_MAX
 };
