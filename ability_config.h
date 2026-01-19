@@ -40,8 +40,8 @@ constexpr AbilityConfig ABILITY_CONFIGS[] = {
     // #87: 分身 - ZRで発動、30秒間、60秒クールダウン
     {ABILITY_CLONE, TRIGGER_INSTANT, ABILITY_BTN_ZR, 1800, 3600, true},
 
-    // #88: ボール消える - Y+打つで発動、1秒間（60frames）、5秒クールダウン
-    {ABILITY_INVISIBLE_BALL, TRIGGER_ON_HIT, ABILITY_BTN_Y, 60, 300, false},
+    // #88: ボール消える - Y+打つで発動、0.5秒間（30frames）、5秒クールダウン
+    {ABILITY_INVISIBLE_BALL, TRIGGER_ON_HIT, ABILITY_BTN_Y, 30, 300, false},
 };
 
 // 能力設定の数
