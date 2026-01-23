@@ -28,8 +28,9 @@ struct AbilityConfig
 // 能力定義テーブル（拡張時はここに追加）
 // 60fps想定: 180frames=3秒, 1800frames=30秒, 3600frames=60秒
 constexpr AbilityConfig ABILITY_CONFIGS[] = {
-    // #84: スピードアップ - A+打つで発動、即時効果、3秒クールダウン
-    {ABILITY_SPEED_UP, TRIGGER_ON_HIT, ABILITY_BTN_A, 0, 180, true},
+    // #84: スピードアップ - A+振るで発動、60frames有効、3秒クールダウン
+    // スイング時に発動し、その打球の速度がアップ（サーバー側で消費）
+    {ABILITY_SPEED_UP, TRIGGER_ON_SWING, ABILITY_BTN_A, 60, 180, true},
 
     // #85: ラケット判定強化 - B+振るで発動、即時効果、3秒クールダウン
     {ABILITY_RACKET_EXTEND, TRIGGER_ON_SWING, ABILITY_BTN_B, 0, 180, true},
