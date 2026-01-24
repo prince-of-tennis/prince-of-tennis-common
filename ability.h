@@ -35,5 +35,4 @@ struct AbilityState
     int player_id;
     AbilityType active_ability;
     uint32_t remaining_frames;
-    uint32_t cooldown_frames;
 } __attribute__((packed));
