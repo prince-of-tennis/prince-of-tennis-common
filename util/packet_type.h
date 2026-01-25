@@ -13,5 +13,6 @@ enum PacketType
     PACKET_TYPE_JUDGE_RESULT,    // 判定結果
     PACKET_TYPE_ABILITY_REQUEST, // 能力発動リクエスト
     PACKET_TYPE_ABILITY_STATE,   // 能力状態同期
+    PACKET_TYPE_MATCH_RESULT,    // 試合結果（勝者ID）
     PACKET_TYPE_MAX
 };
