@@ -1,9 +1,12 @@
 #pragma once
-#define MAX_SETS 5  // 5セットマッチ（3セット先取で勝利）
+
+// 3セット先取で勝利
+constexpr int SETS_TO_WIN = 3;
+
 struct GameScore
 {
-    int games_in_set[MAX_SETS][2]; // [セット番号][プレイヤー番号 (0 or 1)]
-    int current_set;               // 現在のセット番号 (0-4)
-    int current_game_p1;           // 現在のゲームでのP1のポイント数 (0, 15, 30, 40...)
-    int current_game_p2;           // 現在のゲームでのP2のポイント数
+    int point_p1;  // P1のポイント (0, 15, 30, 40, 50)
+    int point_p2;  // P2のポイント (0, 15, 30, 40, 50)
+    int sets_p1;   // P1の獲得セット数
+    int sets_p2;   // P2の獲得セット数
 };
