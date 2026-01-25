@@ -12,4 +12,5 @@ struct Ball
     int last_hit_player_id;   // 最後にヒットしたプレイヤーID
     int hit_count;            // ラリー中のヒット回数（打ち返し回数）
     float previous_z;         // 前フレームのZ座標（ネット判定用）
+    float gravity_multiplier; // 重力倍率（スピードアップ時に増加）
 };
